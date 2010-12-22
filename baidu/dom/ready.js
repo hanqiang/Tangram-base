@@ -50,7 +50,7 @@ baidu.dom.ready = function () {
             opera = baidu.browser.opera;
 
         // Mozilla, Opera (see further below for it) and webkit nightlies currently support this event
-        if (doc.addEventListener && !opera) {
+        if (doc.addEventListener) {
             // Use the handy event callback
             doc.addEventListener("DOMContentLoaded", opera ? function () {
                 if (isReady) {
